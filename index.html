@@ -21,14 +21,20 @@
     <div class="content-area">
         <h1 class="title">Generate a <br> <span>random password</span></h1> 
         <p>Never use an insecure password again.</p>
-
-        <button class="button">Generate passwords</button>
+        <div class="row">
+            <button onclick="runGenerator()" class="button">Generate passwords</button>
+            <div class="lenght-container">
+                <p>Prefered password lenght</p>
+                <input id="password-lenght" type="number" value="8">
+        
+            </div>
+        </div>
         <div class="spacing-line"></div>
         <div class="password-grid">
-            <input id="option1" type="text">
-            <input id="option2" type="text">
-            <input id="option3" type="text">
-            <input id="option4" type="text">
+            <input onclick="copyPassword()" id="option1" type="text">
+            <input onclick="copyPassword()" id="option2" type="text">
+            <input onclick="copyPassword()" id="option3" type="text">
+            <input onclick="copyPassword()" id="option4" type="text">
         </div>
     </div>
     <script src="./index.js"></script>
