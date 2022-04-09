@@ -5,4 +5,105 @@ $green-color: #10B981;
 body * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+body {
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+.content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    height: 550px;
+    width: 550px;
+    background-color: $background-color;
+    padding: 52px;
+    .title {
+
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Karla', sans-serif;
+        span {
+            color: $green-color;
+        }
+    }
+    p {
+        margin: 10px 0;
+
+        font-size: 20px;
+        font-weight: 400;
+        opacity: .7; 
+    }
+}
+
+.button {
+    cursor: pointer;
+
+    margin-top: 41px;
+
+    height: 42px;
+    width: 223px;
+    border: none;
+    border-radius: .3rem;
+    padding: 0 18px;
+   
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+
+    background-color: $green-color;
+    background-image: url(../img/Icon.png);
+    background-repeat: no-repeat;
+    background-size:  14px 18px;
+    background-position: 8% 50%;
+    &:hover {
+        filter: brightness(130%);
+    }
+}
+.spacing-line {
+    background-color: $field-color;
+    height: 1px;
+    width: 100%;
+    margin: 35px 0;
+}
+input {
+    cursor: pointer;
+
+    height: 39px;
+    width: 211px;
+    border: 0;
+    border-radius: 6px;
+
+    background-color: $field-color;
+    background-image: url(../img/dots-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 5px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $green-color;
+    &:hover,
+    &:focus {
+        outline: none;
+        filter: brightness(130%);
+    }
+}
+.password-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 27px;
 }
