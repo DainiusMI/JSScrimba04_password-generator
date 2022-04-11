@@ -1,5 +1,5 @@
 # PASSWORD GENERATOR
-This project is a part of Scrimba free javascript course
+This is a solo project that is a part of Scrimba free javascript course
 
 ## LINK TO FIGMA DESIGN:
 https://www.figma.com/file/YRO9Iw5IYaOorjnRyNz4bV/Random-Password-Generator?node-id=102%3A702
